@@ -67,6 +67,8 @@ class RobotArmTFListener:
             'joint_4', 'joint_5', 'joint_6'
         ]
         
+        # self.link6_pose_pub = rospy.Publisher('/link6_pose', Link6Pose, queue_size=10)
+        
         rospy.loginfo("Robot Arm TF Listener 已啟動")
 
     def tf_callback(self, msg):
@@ -149,6 +151,7 @@ class RobotArmTFListener:
         rate = rospy.Rate(10)  # 10Hz
         while not rospy.is_shutdown():
             self.print_robot_info()
+            # self.publish_link6_pose()
             rate.sleep()
 
 if __name__ == '__main__':
