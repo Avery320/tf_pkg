@@ -2,6 +2,6 @@
     <!-- 啟動 rosbridge websocket server -->
     <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
 
-    <!-- 啟動 hiwin_rak package 的 subLink6_pose.py 節點 -->
-    <node pkg="tf_pkg" type="subLink6_pose.py" name="sub_link6_pose" output="screen" />
+    <!-- 啟動 hiwin_rak package 的 subTool0_pose.py 節點 -->
+    <node pkg="tf_pkg" type="subTool0_pose.py" name="sub_tool0_pose" output="screen" />
 </launch>
